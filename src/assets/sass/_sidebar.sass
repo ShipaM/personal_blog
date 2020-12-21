@@ -1,0 +1,84 @@
+.sidebar
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100
+    height: 100vh
+    background-color: $primary
+    max-width: 300px
+    width: 100%
+    box-shadow: 5px 0 15px rgba(#050505, .1)
+    &__header
+        padding-bottom: 180px
+        background: $secondary
+    &__content
+        padding: 0 2rem
+        margin-top: -6rem
+    &__footer
+        display: flex
+        justify-content: space-between
+        padding: 0 2rem
+
+.profile
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    &__avatar
+        display: block
+        width: 120px
+        height: 120px
+        border: 2px solid $white
+        box-shadow: 0 7px 20px rgba(0, 0, 0, .25)
+        border-radius: 50%
+        margin-bottom: 2rem
+        position: relative
+        &.ibg
+            background-position: 0 0
+            img
+                max-width: 100%
+
+    &__name
+        font-size: 1.8rem
+        text-align: center
+
+    &__prof
+        font-size: 1.4rem
+        font-weight: 300
+        color: #DEDEDE
+        margin-bottom: 2rem
+    &__text
+        font-size: 12px
+        line-height: 18px
+        font-weight: 400
+        border-top: 1px solid #1C1C1C
+        border-bottom: 1px solid #1C1C1C
+        padding: 3rem 0
+        margin: 3rem 0
+
+.btn
+    font-size: 1.2rem
+    font-weight: 500
+    line-height: 14px
+    color: $white
+    font-family: inherit
+    cursor: pointer
+    padding: 1.1em 2.1em
+    border: none
+    border-radius: 3em
+    background-color: #fff
+    transition: background .2s linear
+    &_red
+        background: $red
+        box-shadow: 0 7px 17px -10px rgba($red, .3)
+        &:hover
+            background: darken($red, 5%)
+    &_blue
+        background: $blue
+        box-shadow: 0 7px 17px -10px rgba($blue, .3)
+        &:hover
+            background: darken($blue, 5%)
+.social
+    &__link
+        &:nth-last-child(2)
+            margin: 0 1.5rem

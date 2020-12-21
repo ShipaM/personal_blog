@@ -1,0 +1,86 @@
+// //mixin
+// @mixin font($fname, $fstyle, $fweight, $furl)
+//     @font-face
+//         font-family: $fname
+//         font-style: $fstyle
+//         font-weight: $fweight
+// 		// font-display: swap // Uncomment to initially display system fonts
+//         src: local($fname), url($furl) format('woff2')
+
+// @include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+// @include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
+// @include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
+// @include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+//normalize css/////////////////////////////////////
+*
+    padding: 0
+    margin: 0
+    border: 0
+
+*, *:before, *:after
+    box-sizing: border-box
+
+input, textarea
+    outline: none
+    &:focus:required:invalid
+        border-color: red
+    &:required:valid
+        border-color: green
+
+a:focus,a:active
+    outline: none
+aside, nav, footer, header, section, article
+    display: block
+
+html, body
+    height: 100%
+    min-width: 320px
+
+body
+    font-size: 14px
+    //font-family: $font-family
+    -moz-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+
+input, button, textarea
+    font-family: inherit
+
+input::-ms-clear
+    display: none
+
+button
+    cursor:
+
+button::-moz-focus-inner
+    padding: 0
+    border: 0
+
+a, a:visited
+    text-decoration: none
+    cursor: pointer
+
+a:hover
+    text-decoration: none
+    cursor:
+
+ul li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,h2,h3,h4,h5,h6
+    font-weight: inherit
+    font-size: inherit
+
+//normalize css/////////////////////////////////////
+
+//variables
+$primary: #202020
+$secondary: #121212
+$white: #fff
+//$font-family: 'Roboto'
+$red: #ed3024
+$blue: #3137C9
+$black: #000

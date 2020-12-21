@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{> head }}
+</head>
+
+<body class="no-scroll">
+    <div class="wrapper">
+        <div class="page">
+            {{> header }} {{> sidebar }}
+
+            <main class="main">
+                <div class="container">
+                    {{> body }}
+                </div>
+                <!-- /.container -->
+
+            </main>
+            <!-- /.main -->
+
+            <footer class="footer">
+                {{> footer }}
+            </footer>
+            <!-- /.footer -->
+
+        </div>
+        <!-- /.page -->
+    </div>
+    <!-- /.wrapper -->
+
+    {{> story-modal }}
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
